@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+html,
+body {
+    height: 100%;
+    font-size: 14px;
+}
+:root {
+    /* color */
+    --bg-sidebar: rgb(242,245,246);
+    --active-blue: rgb(74,106,218);
+    --text-basic: rgb(43,46,47);
+    --menu__icon: rgb(142,150,163);
+    /* border */
+    --border: 1px solid rgb(245,245,245);
+}
+.pr-10 {
+    padding-right: 10px;
+}
+/* --------Sidebar-------- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: var(--bg-sidebar);
+    display: flex;
+    flex-direction: column;
+    border-right: var(--border);
+    padding: 30px 0 30px 20px;
+}
+.logo {
+    height: 10%;
+}
+.logo__link {
+    display: flex;
+    align-items: center;
+}
+.logo__icon{
+    color: var(--active-blue);
+    font-size: 3rem;
+    font-weight: 800;
+}
+.logo__name {
+    color: var(--text-basic);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+.menu {
+    height: 60%;
+}
+.menu__item {
+    padding: 15px 0;
+}
+.menu__link {
+    display: flex;
+    align-items:center;
+}
+.menu__icon {
+    color: var(--menu__icon);
+    font-size: 1.2rem;
+}
+.menu__text {
+    color: var(--text-basic);
+    font-size: .9rem;
+    font-weight: 600;
+}
+.projects {
+    height: 40%;
+}
+.projects__title {
+    text-transform: uppercase;
+    color: gray;
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* -------main-------- */
+.page {
+    display: flex;
+    height: 100%;
+}
+/* -------inbox--------- */
+.inbox {
+    height: 100%;
+    width: 350px;
+    border-right: var(--border);
+    margin-left: 250px;
+    padding: 30px 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+/* ---------Chat--------- */
+.chat {
+    height: 100%;
+    width: calc(100vw - 700px);
+}
+
+/* -------Panel---------- */
+.panel {
+    border-left:var(--border);
+    width: 100px;
+}
