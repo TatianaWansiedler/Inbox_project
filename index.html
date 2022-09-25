@@ -1,123 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
     <title>Inbox</title>
-</head>
+  </head>
 
-<body>
-    <aside class="sidebar">
+  <body>
+    <main class="page">
+      <aside class="sidebar">
         <div class="logo">
-            <a class="logo__link" href="#">
-                <span class="logo__icon pr-10"><i class="las la-cube"></i></span>
-                <span class="logo__name">Shark</span>    
-            </a>
+          <a class="logo__link" href="#">
+            <span class="logo__icon pr-10">
+              <i class="las la-cube"></i>
+            </span>
+            <span class="logo__name"> Shark </span>
+          </a>
         </div>
         <nav class="navigation">
-            <section class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            <span class="menu__icon pr-10"><i class="las la-spinner"></i></span>
-                            <span class="menu__text">Dashboard</span>    
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            <span class="menu__icon pr-10"><i class="las la-spinner"></i></span>
-                            <span class="menu__text">Statistic</span>    
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            <span class="menu__icon pr-10"><i class="las la-spinner"></i></span>
-                            <span class="menu__text">Support</span>    
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            <span class="menu__icon pr-10"><i class="las la-spinner"></i></span>
-                            <span class="menu__text">Inbox</span>    
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            <span class="menu__icon pr-10"><i class="las la-spinner"></i></span>
-                            <span class="menu__text">Goals</span>    
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            <span class="menu__icon pr-10"><i class="las la-spinner"></i></span>
-                            <span class="menu__text">Links</span>    
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="projects">
-                <h5 class="projects__title">progects</h5>
-                <ul class="projectts__list">
-                    <li class="projects__item">
-                        <a class="projects__link" href="#">
-                            <span class="projects__icon"></span>
-                            <span class="projects__text">callipso</span>
-                            <span class="projects__counter"></span>     
-                        </a>
-                    </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="#">
-                            <span class="projects__icon"></span>
-                            <span class="projects__text">callipso</span>
-                            <span class="projects__counter"></span>     
-                        </a>
-                    </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="#">
-                            <span class="projects__icon"></span>
-                            <span class="projects__text">callipso</span>
-                            <span class="projects__counter"></span>     
-                        </a>
-                    </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="#">
-                            <span class="projects__icon"></span>
-                            <span class="projects__text">callipso</span>
-                            <span class="projects__counter"></span>     
-                        </a>
-                    </li>
-                </ul>
-                <div class="button">
-                    <button>Show more</button>
-                </div>
-            </section>
+          <section class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  <span class="menu__icon pr-10">
+                    <i class="las la-layer-group"></i>
+                  </span>
+                  <span class="menu__text"> Dashboard </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  <span class="menu__icon pr-10">
+                    <i class="las la-signal"></i>
+                  </span>
+                  <span class="menu__text"> Statistic </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  <span class="menu__icon pr-10">
+                    <i class="las la-comment-alt"></i>
+                  </span>
+                  <span class="menu__text"> Support </span>
+                </a>
+              </li>
+              <li class="menu__item menu__item--active">
+                <a class="menu__link" href="#">
+                  <span class="menu__icon pr-10">
+                    <i class="las la-inbox"></i>
+                  </span>
+                  <span class="menu__text"> Inbox </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  <span class="menu__icon pr-10">
+                    <i class="las la-rocket"></i>
+                  </span>
+                  <span class="menu__text"> Goals </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  <span class="menu__icon pr-10">
+                    <i class="las la-link"></i>
+                  </span>
+                  <span class="menu__text"> Links </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="projects pl-10">
+            <h5 class="projects__title">progects</h5>
+            <ul class="projectts__list">
+              <li class="projects__item">
+                <a class="projects__link" href="#">
+                  <div class="projects__icon progects__icon--orange"></div>
+                  <div class="projects__text">Callipso</div>
+                  <div class="projects__counter centered">&plus;4</div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a class="projects__link" href="#">
+                  <div class="projects__icon"></div>
+                  <div class="projects__text">BWS bank</div>
+                  <div class="projects__counter">&plus;5</div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a class="projects__link" href="#">
+                  <div class="projects__icon progects__icon--purp"></div>
+                  <div class="projects__text">Unicorn app</div>
+                  <div class="projects__counter">&plus;1</div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a class="projects__link" href="#">
+                  <div class="projects__icon progects__icon--green"></div>
+                  <div class="projects__text">Salt</div>
+                  <div class="projects__counter">&plus;3</div>
+                </a>
+              </li>
+            </ul>
+            <button class="button mt-20">Show more</button>
+          </section>
         </nav>
-    </aside>
-
-    <main class="page">
-
-        <div class="inbox p-30-20">
-            <header class="header">
-                <h2 class="title">Inbox</h2>
-                <button class="plus">
-                    &plus;
-                </button>
-            </header>
-            <div class="toggle">
-            </div>
-            <div class="card">
-                <section class="card__person">
-                </section>
-            </div>
+      </aside>
+      <section class="inbox">
+        <header class="header">
+          <h2 class="title">Inbox</h2>
+          <button class="button button--small">&plus;</button>
+        </header>
+        <div class="toggle mt-20">
+          <buttton class="toggle__button toggle__button--active ml-5">General</buttton>
+          <buttton class="toggle__button mr-5">Total</buttton>
         </div>
-
-        <div class="chat"></div>
-        <div class="panel"></div>
-
+        <ul class="chat-liste mt-20">
+          <li class="chat-liste__item chat-liste__item--unread">
+            <div class="chat-liste__avatar">
+              <span class="chat-liste__status chat-liste__status--online"></span>
+            </div>
+            <div class="chat-liste__info">
+              <p class="chat-liste__name">Michael.B</p>
+              <p class="chat-liste__position">Project manager</p>
+              <p class="chat-liste__mail__msg">Sent you the file</p>
+            </div>
+            <div class="chat-liste__counter chat-liste__counter--unread">2</div>
+          </li>
+          <li class="chat-liste__item chat-liste__item--unread">
+            <div class="chat-liste__avatar">
+              <span class="chat-liste__status chat-liste__status--online"></span>
+            </div>
+            <div class="chat-liste__info">
+              <p class="chat-liste__name">Katie.W</p>
+              <p class="chat-liste__position">Middle designer</p>
+              <p class="chat-liste__mail__msg">See you tommorow</p>
+            </div>
+            <div class="chat-liste__counter chat-liste__counter--unread">3</div>
+          </li>
+          <li class="chat-liste__item">
+            <div class="chat-liste__avatar">
+              <span class="chat-liste__status"></span>
+            </div>
+            <div class="chat-liste__info">
+              <p class="chat-liste__name">Michael.B</p>
+              <p class="chat-liste__position">Project manager</p>
+              <p class="chat-liste__mail__msg">Sent you the file</p>
+            </div>
+            <div class="chat-liste__counter"></div>
+          </li>
+          <li class="chat-liste__item">
+            <div class="chat-liste__avatar">
+              <span class="chat-liste__status"></span>
+            </div>
+            <div class="chat-liste__info">
+              <p class="chat-liste__name">Michael.B</p>
+              <p class="chat-liste__position">Project manager</p>
+              <p class="chat-liste__mail__msg">Sent you the file</p>
+            </div>
+            <div class="chat-liste__counter"></div>
+          </li>
+          <li class="chat-liste__item">
+            <div class="chat-liste__avatar">
+              <span class="chat-liste__status"></span>
+            </div>
+            <div class="chat-liste__info">
+              <p class="chat-liste__name">Michael.B</p>
+              <p class="chat-liste__position">Project manager</p>
+              <p class="chat-liste__mail__msg">Sent you the file</p>
+            </div>
+            <div class="chat-liste__counter"></div>
+          </li>
+          <li class="chat-liste__item">
+            <div class="chat-liste__avatar">
+              <span class="chat-liste__status"></span>
+            </div>
+            <div class="chat-liste__info">
+              <p class="chat-liste__name">Michael.B</p>
+              <p class="chat-liste__position">Project manager</p>
+              <p class="chat-liste__mail__msg">Sent you the file</p>
+            </div>
+            <div class="chat-liste__counter"></div>
+          </li>
+          <li class="chat-liste__item">
+            <div class="chat-liste__avatar">
+              <span class="chat-liste__status"></span>
+            </div>
+            <div class="chat-liste__info">
+              <p class="chat-liste__name">Michael.B</p>
+              <p class="chat-liste__position">Project manager</p>
+              <p class="chat-liste__mail__msg">Sent you the file</p>
+            </div>
+            <div class="chat-liste__counter"></div>
+          </li>
+          <li class="chat-liste__item">
+            <div class="chat-liste__avatar">
+              <span class="chat-liste__status"></span>
+            </div>
+            <div class="chat-liste__info">
+              <p class="chat-liste__name">Michael.B</p>
+              <p class="chat-liste__position">Project manager</p>
+              <p class="chat-liste__mail__msg">Sent you the file</p>
+            </div>
+            <div class="chat-liste__counter"></div>
+          </li>
+          <li class="chat-liste__item">
+            <div class="chat-liste__avatar">
+              <span class="chat-liste__status"></span>
+            </div>
+            <div class="chat-liste__info">
+              <p class="chat-liste__name">Michael.B</p>
+              <p class="chat-liste__position">Project manager</p>
+              <p class="chat-liste__mail__msg">Sent you the file</p>
+            </div>
+            <div class="chat-liste__counter"></div>
+          </li>
+          <li class="chat-liste__item">
+            <div class="chat-liste__avatar">
+              <span class="chat-liste__status"></span>
+            </div>
+            <div class="chat-liste__info">
+              <p class="chat-liste__name">Michael.B</p>
+              <p class="chat-liste__position">Project manager</p>
+              <p class="chat-liste__mail__msg">Sent you the file</p>
+            </div>
+            <div class="chat-liste__counter"></div>
+          </li>
+        </ul>
+      </section>
+      <section class="chat"></section>
+      <aside class="panel">
+        <nav class="buttons"></nav>
+      </aside>
     </main>
-    
-</body>
+  </body>
 </html>
