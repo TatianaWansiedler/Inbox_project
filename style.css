@@ -16,6 +16,7 @@ body,
 :root {
   /* color */
   --main-bg: rgb(242, 245, 246);
+  --bg-white: white;
   --active-blue: rgb(74, 106, 218);
   --text-basic: rgb(43, 46, 47);
   --text-gray: rgb(142, 150, 163);
@@ -394,10 +395,14 @@ body,
   cursor: pointer;
 }
 .search__input {
-  font-size: 0.8rem;
+  font-size: .9rem;
   outline: none;
   background: none;
   border: none;
+}
+.search__input::-webkit-input-placeholder{
+  color:var(--text-gray);
+  font-size: 0.8rem;
 }
 .search__icon i {
   font-size: 1.2rem;
@@ -416,6 +421,10 @@ body,
 .chat__dialog-box {
   grid-area: box;
   padding: 0 30px;
+  overflow: scroll;
+}
+.chat__dialog-box::-webkit-scrollbar{
+  display: none;
 }
 .date {
   width: 100%;
@@ -440,22 +449,37 @@ body,
   display: flex;
   justify-content: flex-end;
 }
-.message__text--sent span {
+.message__text--sent>span {
   padding: 10px 20px;
   background: rgb(255, 255, 255);
   border-radius: 12px 12px 0 12px;
   margin: 5px 0;
 }
-.message__text--received span {
+.message__text--received>span {
   padding: 10px 20px;
   background: rgb(235, 238, 239);
   border-radius: 12px 12px 12px 0;
   margin: 5px 0;
 }
-.message__status {
+.message__status,
+.message__doc-size {
   font-size: 0.5rem;
   color: var(--text-gray);
   text-transform: uppercase;
+}
+.message__doc {
+  display: flex;
+  align-items:center;
+}
+.message__doc-icon {
+  font-size: 1.8rem;
+  color:var(--active-blue);
+  padding-right: 5px;
+}
+.message__doc-name {
+  font-size: .7rem;
+  color:var(--active-blue);
+  font-weight: 600;
 }
 /* -------------------------------- */
 .chat__row-message {
@@ -468,12 +492,15 @@ body,
 }
 .text-area__message {
   height: 50px;
-  width: 200px;
-  font-size: 0.8rem;
+  max-width: 200px;
+  font-size: 1rem;
   outline: none;
   background: none;
   border: none;
-  color: var(--text-gray);
+}
+.text-area__message::-webkit-input-placeholder{
+  color:var(--text-gray);
+  font-size: 0.8rem;
 }
 .button__icon--modif {
   transform: rotate(90deg);
@@ -481,17 +508,16 @@ body,
 .button--active {
   background: var(--active-blue);
 }
-.button__icon--active {
-  color: white;
-}
+.button__icon--active,
 .button__icon:hover {
   color: white;
 }
-
 /* -------Panel---------- */
 .panel {
   grid-area: panel;
   border-left: var(--border);
+  background:var(--bg-white);
+  z-index: 1;
 }
 .buttons--column {
   height: 100%;
