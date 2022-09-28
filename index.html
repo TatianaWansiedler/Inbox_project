@@ -115,7 +115,7 @@
         <section class="inbox">
             <header class="header">
                 <h2 class="title">Inbox</h2>
-                <button class="button button--small">&plus;</button>
+                <button class="button button--small" onclick="toggleMenu()">&plus;</button>
             </header>
             <div class="toggle mt-20">
                 <buttton class="toggle__button toggle__button--active ml-5">General</buttton>
@@ -152,7 +152,7 @@
                         <p class="chat-liste__name">Arnold.J</p>
                         <p class="chat-liste__position">UI designer</p>
                         <p class="chat-liste__msg">
-                            Hello, I checked the layout again bla bla bla
+                            Hello, I checked the layout again
                         </p>
                     </div>
                     <div class="chat-liste__counter"></div>
@@ -176,7 +176,7 @@
                         <p class="chat-liste__name">Isaac.A</p>
                         <p class="chat-liste__position">SMM manager</p>
                         <p class="chat-liste__msg">
-                            I don't think we're going to finish bla bla
+                            I don't think we're going to finish
                         </p>
                     </div>
                     <div class="chat-liste__counter"></div>
@@ -448,5 +448,12 @@
             </nav>
         </aside>
     </main>
+    <script>
+        function toggleMenu() {
+            var sidebar = document.querySelector('.sidebar')
+
+            sidebar.classList.toggle('sidebar--open');
+        }
+    </script>
 </body>
 </html>
